@@ -23,6 +23,7 @@ img.map{
 img.w{
   width: 100%;
   max-width: 600px;
+  margin-top: 1.0em;
 }
 
 
@@ -53,4 +54,15 @@ input#address_field{
 input#submit_button{
   width: 200px;
   font-size: 1.8em;
+}
+
+#search_info{
+  margin-bottom: 1.0em;
+  padding: 0.5em 0 1em;
+  color: #555;
+  border-bottom: thin solid #aaa;
+}
+
+#search_info h1{
+  font-size: 2.7em;
 }
