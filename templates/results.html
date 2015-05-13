@@ -31,9 +31,12 @@
           <div class="hilite">
              {{quakes[0].time_since_now}}
           </div>
+          <div class="lowlite">
+            {{quakes[0].magnitude}} magnitude
+          </div>
             <img class="map w" src="https://maps.googleapis.com/maps/api/staticmap?size=600x400&markers=color:green%7C{{latitude}},{{longitude}}&markers=color:red%7C{{quakes[0]['latitude']}},{{quakes[0]['longitude']}}" alt="earthquake map">
 
-             <a href="{{quakes[0].url}}">{{quakes[0].magnitude}} magnitude, {{quakes[0].place}}</a>
+             <a href="{{quakes[0].url}}">{{quakes[0].place}}</a>
 
           </section>
       </div>
