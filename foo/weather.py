@@ -2,12 +2,12 @@
 # http://www.wunderground.com/weather/api/d/docs?d=index
 import requests
 import json
+import os
 from datetime import datetime
-from foo.keys import WEATHER as WEATHERKEY
 from foo.utils import get_system_datetime_str, get_time_since
 BASEURL = 'http://api.wunderground.com/api/{key}/conditions/q/{lat},{lng}.json'
 SAT_BASEURL = 'http://api.wunderground.com/api/{key}/satellite/q/{lat},{lng}.json'
-
+WEATHERKEY = os.environ['WEATHER_UNDERGROUND_KEY']
 def get(geod):
     lat = geod['latitude']
     lng = geod['longitude']
