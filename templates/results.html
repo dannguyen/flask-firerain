@@ -2,7 +2,7 @@
 
 <div class="jumbotron">
     <h1>{{geo.formatted_address}}</h1>
-  <div>(Searched for: &lsquo;{{address_searched}}&rsquo;)</div>
+    <div>(Searched for: &lsquo;{{address_searched}}&rsquo;)</div>
 
 
   <div class="container">
@@ -45,26 +45,22 @@
       </div>
     </div>
   </div>
-
 </div>
 
 <div class="container">
 
   <section id='images-list'>
-  <div class="row">
-    {% for img in images[0:15] %}
-      <div class="col-sm-3">
-        <div class="well">
-          <a href="{{img.url}}">
-              <img class="instagram w" src="{{img.image_url}}" alt="instagram">
-            </a>
+    <div class="row">
+      {% for img in images[0:15] %}
+        <div class="col-sm-3">
+          <div class="well">
+            <a href="{{img.url}}">
+                <img class="instagram w" src="{{img.image_url}}" alt="instagram">
+              </a>
+          </div>
         </div>
-      </div>
-    {% endfor %}
-  </div>
-
-
-
+      {% endfor %}
+    </div>
   </section>
 
   <section id='quakes-table'>
@@ -82,11 +78,6 @@
         {% endfor %}
       </table>
   </section>
-
-
-
-
-
 
 </div>
 
