@@ -1,7 +1,8 @@
 {% include 'partials/head.html' %}
 
-<div class="jumbotron">
-    <h1>{{geo.formatted_address}}</h1>
+<div class="jumbotron sec">
+    <h1>{{short_address}}</h1>
+    <h4>{{full_address}}</h4>
     <div>(Searched for: &lsquo;{{address_searched}}&rsquo;)</div>
 
 
@@ -9,10 +10,10 @@
     <div class="row">
 
       <div class="col-sm-4">
-         <section id="weather">
+         <section id="weather" class="tsec">
               <h3>Current weather</h3>
-              <div class="temp">{{ weather.temp }}° F</div>
-              <div class="description">
+              <div class="temp hilite">{{ weather.temp }}° F</div>
+              <div class="description lowlite">
                 {{ weather.description }}
 
                 <img class="icon" src="{{ weather.icon_url }}" alt="icon">
@@ -25,22 +26,34 @@
         </section>
       </div>
       <div class="col-sm-4">
-        <section id="quakes">
+        <section id="quakes" class="tsec">
           <h3>Nearest earthquake</h3>
-          <h4>
-             <strong>{{quakes[0].time_since_now}}</strong>,
+          <div class="hilite">
+             {{quakes[0].time_since_now}}
+          </div>
+          <div class="lowlite">
              {{quakes[0].magnitude}} magnitude, {{quakes[0].place}}
-          </h4>
-              <img class="map w" src="https://maps.googleapis.com/maps/api/staticmap?size=600x400&markers=color:green%7C{{latitude}},{{longitude}}&markers=color:red%7C{{quakes[0]['latitude']}},{{quakes[0]['longitude']}}" alt="earthquake map">
+
+          </div>
+
+            <img class="map w" src="https://maps.googleapis.com/maps/api/staticmap?size=600x400&markers=color:green%7C{{latitude}},{{longitude}}&markers=color:red%7C{{quakes[0]['latitude']}},{{quakes[0]['longitude']}}" alt="earthquake map">
+
           </section>
       </div>
 
       <div class="col-sm-4">
-        <section id="images">
+        <section id="images" class="tsec">
         <h3>Interesting image</h3>
-          <a href="{{images[0].url}}">
-            <img class="instagram w" src="{{images[0].image_url}}" alt="instagram">
-          </a>
+          <div class="hilite">
+            {{images[0].likes}} likes
+          </div>
+          <div class="lowlite">
+            via <a href="https://instagram.com/{{images[0]['username']}}">{{images[0]['username']}}</a>
+          </div>
+            <a href="{{images[0].url}}">
+              <img class="instagram w" src="{{images[0].image_url}}" alt="instagram">
+            </a>
+
         </section>
       </div>
     </div>
@@ -49,7 +62,9 @@
 
 <div class="container">
 
-  <section id='images-list'>
+  <section id='images-list' class="sec">
+  <h3>Interesting Instagram images near {{short_address}}</h3>
+
     <div class="row">
       {% for img in images[0:15] %}
         <div class="col-sm-3">
@@ -63,8 +78,8 @@
     </div>
   </section>
 
-  <section id='quakes-table'>
-      <h4>All significant earthquakes from USGS</h4>
+  <section id='quakes-table' class="sec">
+      <h4>All <a href="http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php">significant earthquakes in past 30 days</a></h4>
 
       <table class="table table-striped table-condensed">
         {% for q in quakes %}

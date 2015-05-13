@@ -16,19 +16,6 @@ footer{
 }
 
 
-#weather, #quakes{
-  text-align: left;
-}
-
-#weather .temp{
-  font-size: 3.0em;
-  font-weight: bold;
-}
-
-#weather .description{
-  font-size: 2.1em;
-}
-
 img.map{
 
 }
@@ -36,4 +23,24 @@ img.map{
 img.w{
   width: 100%;
   max-width: 600px;
+}
+
+
+.sec{
+  margin-bottom: 3.0em;
+}
+
+
+.jumbotron .tsec{
+   text-align: left;
+   font-size: 1.8em;
+}
+
+.jumbotron .tsec h3{
+
+}
+
+.jumbotron .tsec .hilite{
+    font-size: 2.0em;
+    font-weight: bold;
 }

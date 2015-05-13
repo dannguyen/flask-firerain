@@ -32,10 +32,13 @@ def results(addr):
     geo = get_geo(addr_orig)
     lat = geo['latitude']
     lng = geo['longitude']
+    full_address = geo['formatted_address']
     return render_template('results.html',
         latitude = lat,
         longitude = lng,
         address_searched = addr_orig,
+        full_address = full_address,
+        short_address = ', '.join(full_address.split(',')[0:2]),
         quakes = get_quakes(latitude = lat, longitude = lng),
         weather = get_weather(latitude = lat, longitude = lng),
         images = get_images(latitude = lat, longitude = lng),
@@ -52,10 +55,13 @@ def test_page(addr):
     geo = test_foo.get_geo(addr_orig)
     lat = geo['latitude']
     lng = geo['longitude']
+    full_address = geo['formatted_address']
     return render_template('results.html',
         latitude = lat,
         longitude = lng,
         address_searched = addr_orig,
+        full_address = full_address,
+        short_address = ', '.join(full_address.split(',')[0:2]),
         quakes = test_foo.get_quakes(latitude = lat, longitude = lng),
         weather = test_foo.get_weather(latitude = lat, longitude = lng),
         images = test_foo.get_images(latitude = lat, longitude = lng),
