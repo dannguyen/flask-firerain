@@ -43,7 +43,7 @@
 
       <div class="col-sm-4">
         <section id="images" class="tsec">
-        <h3>Interesting image</h3>
+        <h3>Most interesting image</h3>
           <div class="hilite">
             {{images[0].likes}} likes
           </div>
@@ -72,6 +72,10 @@
             <a href="{{img.url}}">
                 <img class="instagram w" src="{{img.image_url}}" alt="instagram">
               </a>
+                <div>
+                   via <a href="https://instagram.com/{{img['username']}}">{{img['username']}}</a>
+                </div>
+
           </div>
         </div>
       {% endfor %}
