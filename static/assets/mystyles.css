@@ -44,3 +44,13 @@ img.w{
     font-size: 2.0em;
     font-weight: bold;
 }
+
+input#address_field{
+  font-size: 2.3em;
+  width: 50%;
+}
+
+input#submit_button{
+  width: 200px;
+  font-size: 1.8em;
+}

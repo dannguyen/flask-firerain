@@ -5,9 +5,21 @@
     <h1>Hello!</h1>
     <form action="/go" method="POST">
       <h4>Type in an address</h4>
-      <input name='address' value="">
-      <br><br>
-      <input type="submit" value="Submit">
+
+      <input name='address' id="address_field" value="">
+      <br>
+      <div><small>
+            e.g.
+               <a href="/address/Stanford+University">Stanford University</a>;
+               <a href="/address/Rodeo+Drive,+Los+Angeles">Rodeo Drive, Los Angeles</a>;
+               <a href="/address/Tallinn,+Estonia">Tallinn, Estonia</a>;
+               <a href="/address/Hong+Kong">Hong Kong</a>.
+            </small>
+        </div>
+      <br>
+
+      <input type="submit" value="GO!" id="submit_button">
+
     </form>
 </div>
 
