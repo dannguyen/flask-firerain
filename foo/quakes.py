@@ -7,14 +7,14 @@ import json
 from foo.utils import haversine, get_system_datetime_str, get_time_since
 from copy import deepcopy
 BASEURL = 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson'
-def get(url = BASEURL, lat = None, lng = None):
+def get(url = BASEURL, latitude = None, longitude = None):
     resp = requests.get(url)
-    quakes = parse(resp.text, lat = lat, lng = lng)
+    quakes = parse(resp.text, latitude = latitude, longitude = longitude)
     return quakes
 
 
 
-def parse(txt, lat, lng):
+def parse(txt, latitude, longitude):
     """
     returns:
         [
@@ -42,7 +42,8 @@ def parse(txt, lat, lng):
         x['datetime_str'] = get_system_datetime_str(x['epoch'])
         x['time_since_now'] = get_time_since(x['epoch'])
 
-        x['distance_from_reference'] = round(haversine(lat1 = lat, lng1 = lng , lat2 = x['latitude'], lng2 = x['longitude']))
+        x['distance_from_reference'] = round(haversine(lat1 = latitude, lng1 = longitude,
+                lat2 = x['latitude'], lng2 = x['longitude']))
         quakes.append(x)
 
     return sorted(quakes, key = itemgetter('distance_from_reference'))

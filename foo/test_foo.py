@@ -1,21 +1,22 @@
 import json
 from foo.geocode import parse as parse_geo
 from foo.quakes import parse as parse_quakes
+from foo.images import parse as parse_images
 from foo.weather import parse as parse_weather
 from foo.weather import parse_satellite as parse_weather_satellite
 # from weather import parse_image as parse_weather_image
 
 
-def get_geo():
+def get_geo(addr="whatever this is ignored"):
     with open('./static/test_foo/geocode_data.json') as f:
         return parse_geo(f.read())
 
-def get_quakes():
+def get_quakes(latitude='ignored', longitude = 'ignored'):
     with open('./static/test_foo/quakes_data.json') as f:
-        return parse_quakes(f.read(), lat = 37.42826410, lng = -122.1688453)
+        return parse_quakes(f.read(), latitude = 37.42826410, longitude = -122.1688453)
 
 
-def get_weather():
+def get_weather(latitude='ignored', longitude = 'ignored'):
     with open('./static/test_foo/weather_data.json') as f:
         d = parse_weather(f.read())
     with open('./static/test_foo/weather_satellite.json') as g:
@@ -23,4 +24,7 @@ def get_weather():
     return d
 
 
+def get_images(latitude='ignored', longitude = 'ignored'):
+    with open('./static/test_foo/images_data.json') as f:
+        return parse_images(f.read())
 

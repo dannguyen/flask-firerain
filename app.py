@@ -8,6 +8,7 @@ import json
 from foo.geocode import get as get_geo
 from foo.quakes import get as get_quakes
 from foo.weather import get as get_weather
+from foo.images import get as get_images
 
 
 
@@ -29,12 +30,15 @@ def go():
 def results(addr):
     addr_orig = unquote_plus(addr)
     geo = get_geo(addr_orig)
+    lat = geo['latitude']
+    lng = geo['longitude']
     return render_template('results.html',
-        latitude = geo['latitude'],
-        longitude = geo['longitude'],
+        latitude = lat,
+        longitude = lng,
         address_searched = addr_orig,
-        quakes = get_quakes(lat = geo['latitude'], lng = geo['longitude']),
-        weather = get_weather(geo),
+        quakes = get_quakes(latitude = lat, longitude = lng),
+        weather = get_weather(latitude = lat, longitude = lng),
+        images = get_images(latitude = lat, longitude = lng),
         geo = geo
     )
 
@@ -44,14 +48,17 @@ def results(addr):
 @app.route('/test/<addr>/')
 def test_page(addr):
     from foo import test_foo
-    addr_orig = unquote_plus(addr) + ' [TEST]'
-    geo = test_foo.get_geo()
+    addr_orig = unquote_plus(addr)
+    geo = test_foo.get_geo(addr_orig)
+    lat = geo['latitude']
+    lng = geo['longitude']
     return render_template('results.html',
-        latitude = geo['latitude'],
-        longitude = geo['longitude'],
+        latitude = lat,
+        longitude = lng,
         address_searched = addr_orig,
-        quakes = test_foo.get_quakes(),
-        weather = test_foo.get_weather(),
+        quakes = test_foo.get_quakes(latitude = lat, longitude = lng),
+        weather = test_foo.get_weather(latitude = lat, longitude = lng),
+        images = test_foo.get_images(latitude = lat, longitude = lng),
         geo = geo
     )
 

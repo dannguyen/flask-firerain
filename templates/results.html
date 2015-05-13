@@ -10,6 +10,7 @@
 
       <div class="col-sm-4">
          <section id="weather">
+              <h3>Current weather</h3>
               <div class="temp">{{ weather.temp }}° F</div>
               <div class="description">
                 {{ weather.description }}
@@ -19,22 +20,29 @@
 
 
             <div>
-              <img class="satellite map" src="{{ weather.satellite_image_url }}" alt="satellite">
+              <img class="satellite w" src="{{ weather.satellite_image_url }}" alt="satellite">
             </div>
         </section>
       </div>
-      <div class="col-sm-8">
+      <div class="col-sm-4">
         <section id="quakes">
-          <h3>Nearest Earthquake</h3>
+          <h3>Nearest earthquake</h3>
           <h4>
              <strong>{{quakes[0].time_since_now}}</strong>,
              {{quakes[0].magnitude}} magnitude, {{quakes[0].place}}
           </h4>
-              <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?size=600x400&markers=color:green%7C{{latitude}},{{longitude}}&markers=color:red%7C{{quakes[0]['latitude']}},{{quakes[0]['longitude']}}" alt="earthquake map">
-
+              <img class="map w" src="https://maps.googleapis.com/maps/api/staticmap?size=600x400&markers=color:green%7C{{latitude}},{{longitude}}&markers=color:red%7C{{quakes[0]['latitude']}},{{quakes[0]['longitude']}}" alt="earthquake map">
           </section>
       </div>
 
+      <div class="col-sm-4">
+        <section id="images">
+        <h3>Interesting image</h3>
+          <a href="{{images[0].url}}">
+            <img class="instagram w" src="{{images[0].image_url}}" alt="instagram">
+          </a>
+        </section>
+      </div>
     </div>
   </div>
 
@@ -42,7 +50,22 @@
 
 <div class="container">
 
+  <section id='images-list'>
+  <div class="row">
+    {% for img in images[0:15] %}
+      <div class="col-sm-3">
+        <div class="well">
+          <a href="{{img.url}}">
+              <img class="instagram w" src="{{img.image_url}}" alt="instagram">
+            </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 
+
+
+  </section>
 
   <section id='quakes-table'>
       <h4>All significant earthquakes from USGS</h4>

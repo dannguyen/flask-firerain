@@ -5,15 +5,14 @@ import json
 import os
 from datetime import datetime
 from foo.utils import get_system_datetime_str, get_time_since
-BASEURL = 'http://api.wunderground.com/api/{key}/conditions/q/{lat},{lng}.json'
-SAT_BASEURL = 'http://api.wunderground.com/api/{key}/satellite/q/{lat},{lng}.json'
+BASEURL = 'http://api.wunderground.com/api/{key}/conditions/q/{latitude},{longitude}.json'
+SAT_BASEURL = 'http://api.wunderground.com/api/{key}/satellite/q/{latitude},{longitude}.json'
 WEATHERKEY = os.environ['WEATHER_UNDERGROUND_KEY']
-def get(geod):
-    lat = geod['latitude']
-    lng = geod['longitude']
-    resp = requests.get(BASEURL.format(lat = lat, lng = lng, key = WEATHERKEY))
+def get(latitude, longitude):
+    atts = {'latitude': latitude, 'longitude': longitude, 'key': WEATHERKEY}
+    resp = requests.get(BASEURL.format(**atts))
     data = parse(resp.text)
-    sat_resp = requests.get(SAT_BASEURL.format(lat = lat, lng = lng, key = WEATHERKEY))
+    sat_resp = requests.get(SAT_BASEURL.format(**atts))
     sat_data = parse_satellite(sat_resp.text)
     data.update(sat_data)
     return data
