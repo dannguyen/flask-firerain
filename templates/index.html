@@ -1,0 +1,14 @@
+
+{% include 'partials/head.html' %}
+
+<div class="jumbotron">
+    <h1>Hello!</h1>
+    <form action="/go" method="POST">
+      <h4>Type in an address</h4>
+      <input name='address' value="">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+</div>
+
+{% include 'partials/foot.html' %}

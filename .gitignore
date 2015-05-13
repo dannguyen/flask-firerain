@@ -1,0 +1,11 @@
+foo/keys.py
+.DS_Store
+*.pyc
+*.pyo
+env
+env*
+dist
+*.egg
+*.egg-info
+_mailinglist
+.tox

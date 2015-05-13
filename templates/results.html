@@ -1,0 +1,72 @@
+{% include 'partials/head.html' %}
+
+<div class="jumbotron">
+    <h1>{{geo.formatted_address}}</h1>
+  <div>(Searched for: &lsquo;{{address_searched}}&rsquo;)</div>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-4">
+         <section id="weather">
+              <div class="temp">{{ weather.temp }}° F</div>
+              <div class="description">
+                {{ weather.description }}
+
+                <img class="icon" src="{{ weather.icon_url }}" alt="icon">
+              </div>
+
+
+            <div>
+              <img class="satellite map" src="{{ weather.satellite_image_url }}" alt="satellite">
+            </div>
+        </section>
+      </div>
+      <div class="col-sm-8">
+        <section id="quakes">
+          <h3>Nearest Earthquake</h3>
+          <h4>
+             <strong>{{quakes[0].time_since_now}}</strong>,
+             {{quakes[0].magnitude}} magnitude, {{quakes[0].place}}
+          </h4>
+              <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?size=600x400&markers=color:green%7C{{latitude}},{{longitude}}&markers=color:red%7C{{quakes[0]['latitude']}},{{quakes[0]['longitude']}}" alt="earthquake map">
+
+          </section>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+
+
+
+  <section id='quakes-table'>
+      <h4>All significant earthquakes from USGS</h4>
+
+      <table class="table table-striped table-condensed">
+        {% for q in quakes %}
+        <tr>
+          <td><a href="{{q.url}}" target="_blank">{{ q.place }}</a></td>
+          <td>{{ q.magnitude }}</td>
+          <td><strong>{{ q.distance_from_reference }} miles</strong></td>
+          <td>{{ q.time_since_now }}</td>
+
+        </tr>
+        {% endfor %}
+      </table>
+  </section>
+
+
+
+
+
+
+</div>
+
+
+
+{% include 'partials/foot.html' %}

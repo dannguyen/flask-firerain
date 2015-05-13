@@ -1,0 +1,781 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1431499653000,
+    "url": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson",
+    "title": "USGS Significant Earthquakes, Past Month",
+    "status": 200,
+    "api": "1.0.17",
+    "count": 19
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.8,
+        "place": "33km SE of Ofunato, Japan",
+        "time": 1431465178950,
+        "updated": 1431499481922,
+        "tz": 540,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20002et4",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us20002et4.geojson",
+        "felt": 125,
+        "cdi": 6.6,
+        "mmi": 5.93,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 1,
+        "sig": 794,
+        "net": "us",
+        "code": "20002et4",
+        "ids": ",pt15132051,at00no99ln,us20002et4,",
+        "sources": ",pt,at,us,",
+        "types": ",cap,dyfi,geoserve,impact-link,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.42,
+        "rms": 1.01,
+        "gap": 38,
+        "magType": "mwp",
+        "type": "earthquake",
+        "title": "M 6.8 - 33km SE of Ofunato, Japan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.0324,
+          38.902,
+          38.86
+        ]
+      },
+      "id": "us20002et4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.3,
+        "place": "33km NNE of Ramechhap, Nepal",
+        "time": 1431416213830,
+        "updated": 1431498827139,
+        "tz": 345,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20002ek5",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us20002ek5.geojson",
+        "felt": 63,
+        "cdi": 5.6,
+        "mmi": 6.54,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 646,
+        "net": "us",
+        "code": "20002ek5",
+        "ids": ",us20002ek5,gcmt20150512073653,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.665,
+        "rms": 0.93,
+        "gap": 17,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 6.3 - 33km NNE of Ramechhap, Nepal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.1659,
+          27.618,
+          15
+        ]
+      },
+      "id": "us20002ek5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 7.3,
+        "place": "18km SE of Kodari, Nepal",
+        "time": 1431414319030,
+        "updated": 1431499417316,
+        "tz": 345,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20002ejl",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us20002ejl.geojson",
+        "felt": 959,
+        "cdi": 7.7,
+        "mmi": 7.75,
+        "alert": "orange",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1738,
+        "net": "us",
+        "code": "20002ejl",
+        "ids": ",us20002ejl,gcmt20150512070519,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,finite-fault,general-link,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.661,
+        "rms": 0.89,
+        "gap": 27,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 7.3 - 18km SE of Kodari, Nepal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.0772,
+          27.8368,
+          15
+        ]
+      },
+      "id": "us20002ejl"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 7.1,
+        "place": "144km SW of Panguna, Papua New Guinea",
+        "time": 1430982622000,
+        "updated": 1431201396000,
+        "tz": 600,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20002das",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us20002das.geojson",
+        "felt": 1,
+        "cdi": 1,
+        "mmi": 5.56,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 1,
+        "sig": 776,
+        "net": "us",
+        "code": "20002das",
+        "ids": ",pt15127050,at00nnyx9e,us20002das,gcmt20150507071022,",
+        "sources": ",pt,at,us,gcmt,",
+        "types": ",cap,dyfi,finite-fault,general-link,geoserve,impact-link,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 3.837,
+        "rms": 1.14,
+        "gap": 10,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 7.1 - 144km SW of Panguna, Papua New Guinea"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          154.5511,
+          -7.2255,
+          23.18
+        ]
+      },
+      "id": "us20002das"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.72,
+        "place": "4km NNW of San Jacinto, California",
+        "time": 1430897986930,
+        "updated": 1431494308952,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/ci37375632",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci37375632.geojson",
+        "felt": 1705,
+        "cdi": 4.8,
+        "mmi": 4.96,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 693,
+        "net": "ci",
+        "code": "37375632",
+        "ids": ",ci37375632,",
+        "sources": ",ci,",
+        "types": ",cap,dyfi,focal-mechanism,general-link,geoserve,moment-tensor,nearby-cities,origin,phase-data,scitech-link,shakemap,",
+        "nst": 182,
+        "dmin": 0.009814,
+        "rms": 0.24,
+        "gap": 23,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.7 - 4km NNW of San Jacinto, California"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.9788333,
+          33.8116667,
+          15.32
+        ]
+      },
+      "id": "ci37375632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 7.5,
+        "place": "130km SSW of Kokopo, Papua New Guinea",
+        "time": 1430790245210,
+        "updated": 1431201394000,
+        "tz": 600,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20002bnf",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us20002bnf.geojson",
+        "felt": 5,
+        "cdi": 7.1,
+        "mmi": 6.94,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 1,
+        "sig": 869,
+        "net": "us",
+        "code": "20002bnf",
+        "ids": ",pt15125050,at00nnusth,us20002bnf,gcmt20150505014405,",
+        "sources": ",pt,at,us,gcmt,",
+        "types": ",cap,dyfi,finite-fault,general-link,geoserve,impact-link,losspager,moment-tensor,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.295,
+        "rms": 0.53,
+        "gap": 22,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 7.5 - 130km SSW of Kokopo, Papua New Guinea"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.8857,
+          -5.465,
+          42
+        ]
+      },
+      "id": "us20002bnf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.64,
+        "place": "2km SW of Concord, California",
+        "time": 1430691199530,
+        "updated": 1431473520297,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/nc72439615",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72439615.geojson",
+        "felt": 5050,
+        "cdi": 4.3,
+        "mmi": 3.88,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 634,
+        "net": "nc",
+        "code": "72439615",
+        "ids": ",nc72439615,",
+        "sources": ",nc,",
+        "types": ",cap,dyfi,focal-mechanism,general-link,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,scitech-link,shakemap,tectonic-summary,",
+        "nst": 269,
+        "dmin": 0.01339,
+        "rms": 0.21,
+        "gap": 30,
+        "magType": "mw",
+        "type": "earthquake",
+        "title": "M 3.6 - 2km SW of Concord, California"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0473333,
+          37.9646667,
+          13.46
+        ]
+      },
+      "id": "nc72439615"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.8,
+        "place": "1km WNW of View Park-Windsor Hills, California",
+        "time": 1430651238130,
+        "updated": 1431482687932,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/ci37374008",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci37374008.geojson",
+        "felt": 5225,
+        "cdi": 5.4,
+        "mmi": 5.75,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 762,
+        "net": "ci",
+        "code": "37374008",
+        "ids": ",ci37374008,",
+        "sources": ",ci,",
+        "types": ",cap,dyfi,focal-mechanism,general-link,geoserve,moment-tensor,nearby-cities,origin,phase-data,scitech-link,shakemap,",
+        "nst": 195,
+        "dmin": 0.009134,
+        "rms": 0.28,
+        "gap": 24,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.8 - 1km WNW of View Park-Windsor Hills, California"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3595,
+          33.9995,
+          12.09
+        ]
+      },
+      "id": "ci37374008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.2,
+        "place": "8km S of Galesburg, Michigan",
+        "time": 1430583787980,
+        "updated": 1431479585199,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20002avh",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us20002avh.geojson",
+        "felt": 14635,
+        "cdi": 5.6,
+        "mmi": 4.62,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 831,
+        "net": "us",
+        "code": "20002avh",
+        "ids": ",us20002avh,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,general-link,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.674,
+        "rms": 0.62,
+        "gap": 73,
+        "magType": "mwr",
+        "type": "earthquake",
+        "title": "M 4.2 - 8km S of Galesburg, Michigan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.4293,
+          42.2121,
+          5.88
+        ]
+      },
+      "id": "us20002avh"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.8,
+        "place": "106km SSW of Kokopo, Papua New Guinea",
+        "time": 1430467564990,
+        "updated": 1430488583000,
+        "tz": 600,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20002am6",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us20002am6.geojson",
+        "felt": 3,
+        "cdi": 5.2,
+        "mmi": 5.85,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 1,
+        "sig": 713,
+        "net": "us",
+        "code": "20002am6",
+        "ids": ",pt15121050,at00nnnvu6,us20002am6,gcmt20150501080605,",
+        "sources": ",pt,at,us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-link,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.061,
+        "rms": 0.77,
+        "gap": 18,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 6.8 - 106km SSW of Kokopo, Papua New Guinea"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.8013,
+          -5.196,
+          57.04
+        ]
+      },
+      "id": "us20002am6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.42,
+        "place": "4km NE of Carson, California",
+        "time": 1430402475960,
+        "updated": 1431298224328,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/ci37372672",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci37372672.geojson",
+        "felt": 2567,
+        "cdi": 4.5,
+        "mmi": 5.31,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 630,
+        "net": "ci",
+        "code": "37372672",
+        "ids": ",ci37372672,",
+        "sources": ",ci,",
+        "types": ",cap,dyfi,focal-mechanism,general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,shakemap,",
+        "nst": 168,
+        "dmin": 0.01869,
+        "rms": 0.32,
+        "gap": 51,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.4 - 4km NE of Carson, California"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2511667,
+          33.851,
+          14.66
+        ]
+      },
+      "id": "ci37372672"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.7,
+        "place": "125km SSW of Kokopo, Papua New Guinea",
+        "time": 1430390705260,
+        "updated": 1431201388000,
+        "tz": 600,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20002ag9",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us20002ag9.geojson",
+        "felt": 4,
+        "cdi": 4.6,
+        "mmi": 6.52,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 1,
+        "sig": 692,
+        "net": "us",
+        "code": "20002ag9",
+        "ids": ",pt15120050,at00nnm8j4,us20002ag9,gcmt20150430104505,",
+        "sources": ",pt,at,us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-link,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.241,
+        "rms": 0.96,
+        "gap": 15,
+        "magType": "mwc",
+        "type": "earthquake",
+        "title": "M 6.7 - 125km SSW of Kokopo, Papua New Guinea"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.8179,
+          -5.3917,
+          48.88
+        ]
+      },
+      "id": "us20002ag9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.7,
+        "place": "19km SSE of Kodari, Nepal",
+        "time": 1430032150010,
+        "updated": 1431458224155,
+        "tz": 345,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200029bt",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us200029bt.geojson",
+        "felt": 628,
+        "cdi": 6.5,
+        "mmi": 6.49,
+        "alert": "yellow",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1099,
+        "net": "us",
+        "code": "200029bt",
+        "ids": ",pt15116050,us200029bt,gcmt20150426070910,",
+        "sources": ",pt,us,gcmt,",
+        "types": ",cap,dyfi,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 4.894,
+        "rms": 0.99,
+        "gap": 19,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 6.7 - 19km SSE of Kodari, Nepal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9971,
+          27.782,
+          17.26
+        ]
+      },
+      "id": "us200029bt"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.6,
+        "place": "49km E of Lamjung, Nepal",
+        "time": 1429944321380,
+        "updated": 1431458069703,
+        "tz": 345,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us2000292y",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us2000292y.geojson",
+        "felt": 88,
+        "cdi": 6.8,
+        "mmi": 6.53,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 730,
+        "net": "us",
+        "code": "2000292y",
+        "ids": ",us2000292y,gcmt20150425064521,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 5.69,
+        "rms": 1.17,
+        "gap": 16,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 6.6 - 49km E of Lamjung, Nepal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.8645,
+          28.1927,
+          14.62
+        ]
+      },
+      "id": "us2000292y"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 7.8,
+        "place": "34km ESE of Lamjung, Nepal",
+        "time": 1429942286270,
+        "updated": 1431498519654,
+        "tz": 345,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20002926",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us20002926.geojson",
+        "felt": 1376,
+        "cdi": 8.7,
+        "mmi": 8.84,
+        "alert": "red",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 2870,
+        "net": "us",
+        "code": "20002926",
+        "ids": ",us20002926,gcmt20150425061126,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,finite-fault,general-link,geoserve,impact-link,losspager,moment-tensor,moment-tensor,nearby-cities,origin,phase-data,scitech-link,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 5.835,
+        "rms": 1.19,
+        "gap": 35,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 7.8 - 34km ESE of Lamjung, Nepal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.7079,
+          28.1473,
+          15
+        ]
+      },
+      "id": "us20002926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.2,
+        "place": "182km WSW of Bella Bella, Canada",
+        "time": 1429883776020,
+        "updated": 1431434330745,
+        "tz": -540,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200028ue",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us200028ue.geojson",
+        "felt": 20,
+        "cdi": 5.4,
+        "mmi": 5.46,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 1,
+        "sig": 602,
+        "net": "us",
+        "code": "200028ue",
+        "ids": ",us200028ue,at00nnbddw,gcmt20150424135616,",
+        "sources": ",us,at,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-link,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 1.65,
+        "rms": 0.85,
+        "gap": 68,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 6.2 - 182km WSW of Bella Bella, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -130.6951,
+          51.7685,
+          10
+        ]
+      },
+      "id": "us200028ue"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.3,
+        "place": "158km SSE of Lata, Solomon Islands",
+        "time": 1429743435970,
+        "updated": 1430564339000,
+        "tz": 660,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200028gt",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us200028gt.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": 4.67,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 611,
+        "net": "us",
+        "code": "200028gt",
+        "ids": ",us200028gt,gcmt20150422225716,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 6.863,
+        "rms": 0.81,
+        "gap": 28,
+        "magType": "mwb",
+        "type": "earthquake",
+        "title": "M 6.3 - 158km SSE of Lata, Solomon Islands"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          166.4238,
+          -12.0254,
+          72
+        ]
+      },
+      "id": "us200028gt"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.4,
+        "place": "64km SE of Su'ao, Taiwan",
+        "time": 1429494178380,
+        "updated": 1431317204607,
+        "tz": 480,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200027ps",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us200027ps.geojson",
+        "felt": 83,
+        "cdi": 5.4,
+        "mmi": 4.54,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 1,
+        "sig": 675,
+        "net": "us",
+        "code": "200027ps",
+        "ids": ",at00nn30rn,pt15110050,us200027ps,gcmt20150420014258,",
+        "sources": ",at,pt,us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-link,impact-text,losspager,moment-tensor,moment-tensor,moment-tensor,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.658,
+        "rms": 1.25,
+        "gap": 11,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 6.4 - 64km SE of Su'ao, Taiwan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.3154,
+          24.2027,
+          29
+        ]
+      },
+      "id": "us200027ps"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.5,
+        "place": "183km SSW of Sigave, Wallis and Futuna",
+        "time": 1429285971650,
+        "updated": 1429480580000,
+        "tz": -720,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200027c2",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us200027c2.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": 5.03,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 1,
+        "sig": 650,
+        "net": "us",
+        "code": "200027c2",
+        "ids": ",at00nmyk49,us200027c2,gcmt20150417155251,",
+        "sources": ",at,us,gcmt,",
+        "types": ",cap,geoserve,impact-link,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 3.702,
+        "rms": 1.36,
+        "gap": 55,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 6.5 - 183km SSW of Sigave, Wallis and Futuna"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -178.5848,
+          -15.9073,
+          10
+        ]
+      },
+      "id": "us200027c2"
+    }
+  ],
+  "bbox": [
+    -178.5848,
+    -15.9073,
+    5.88,
+    166.4238,
+    51.7685,
+    72
+  ]
+}
