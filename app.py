@@ -41,7 +41,7 @@ def results(addr):
         short_address = ', '.join(full_address.split(',')[0:2]),
         quakes = get_quakes(latitude = lat, longitude = lng),
         weather = get_weather(latitude = lat, longitude = lng),
-        images = get_images(latitude = lat, longitude = lng),
+        images = get_images(latitude = lat, longitude = lng)[0:16],
         geo = geo
     )
 
@@ -64,7 +64,7 @@ def test_page(addr):
         short_address = ', '.join(full_address.split(',')[0:2]),
         quakes = test_foo.get_quakes(latitude = lat, longitude = lng),
         weather = test_foo.get_weather(latitude = lat, longitude = lng),
-        images = test_foo.get_images(latitude = lat, longitude = lng),
+        images = test_foo.get_images(latitude = lat, longitude = lng)[0:16],
         geo = geo
     )
 
