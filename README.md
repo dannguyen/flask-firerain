@@ -1,9 +1,10 @@
 
 ## Flask App Fire and Rain
 
-A quickie <a href="http://flask.pocoo.org/">Python 3.x Flask app</a> that mashes data from Google Maps Geocoding, Instagram, Weather Underground, and the USGS Earthquake Hazards Program. A modification of [Ben Welsh's First News App with Flask](http://first-news-app.readthedocs.org/en/latest/). By <a href="https://twitter.com/dancow">Dan Nguyen</a> for <a href="http://www.compjour.org">CompJour</a>
+A quickie <a href="http://flask.pocoo.org/">Python 3.x Flask app</a> that mashes data from Google Maps Geocoding, Instagram, Weather Underground, and the USGS Earthquake Hazards Program. A modification of [Ben Welsh's First News App with Flask](http://first-news-app.readthedocs.org/en/latest/). Front-end styles courtesy of [Bootstrap 3](http://getbootstrap.com/).
 
-It's called "Fire and Rain" but there's no wildfires API, so it's just earthquakes and weather and Instagram. It is also chock-full for horrible design decisions and spaghetti code and laughable test suite and it uses Python for what clearly should be front-end AJAX code.
+
+App built by <a href="https://twitter.com/dancow">Dan Nguyen</a> for <a href="http://www.compjour.org">Stanford's Computational Journalism class</a>. It's called "Fire and Rain" but there's no wildfires API, so it's just earthquakes and weather and Instagram. It is also chock-full for horrible design decisions and spaghetti code and laughable test suite and it uses Python for what clearly should be front-end AJAX code.
 
 It is currently deployed on [Heroku](https://devcenter.heroku.com/articles/getting-started-with-python-o) at: [sleepy-mesa-7300.herokuapp.com/](http://sleepy-mesa-7300.herokuapp.com/)
 
